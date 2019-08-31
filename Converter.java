@@ -58,7 +58,7 @@ public class Converter {
     public static void printFahrenheitConversionTable(int lower, int upper) {
         int i;
         for (i = lower; i < upper + 1; i++) {
-            System.out.println("Fahrenheit: " + i + " -> Celsius: " + String.format("%,.3f", fahrenheitToCelsius(i)));
+            System.out.printf("Fahrenheit: " + i + " -> Celsius: %.3f \n", fahrenheitToCelsius(i));
         }
     }
     /**
@@ -82,7 +82,7 @@ public class Converter {
     public static void printCelsiusConversionTable(int lower, int upper) {
         int i = lower;
         while (i < upper + 1) {
-            System.out.println("Celsius: " + i + " -> Fahrenheit: " + String.format("%,.3f", celsiusToFahrenheit(i)));
+            System.out.printf("Celsius: " + i + " -> Fahrenheit: %.3f \n", celsiusToFahrenheit(i));
             i++;
         }
     }
